@@ -1,0 +1,16 @@
+name: "CodeQL config"
+
+queries:
+  - uses: security-and-quality
+
+paths:
+  - src/
+  - packages/**/src/
+
+paths-ignore:
+  - "**/*.test.ts"
+  - "**/*.test.tsx"
+  - "**/*.spec.ts"
+  - "**/*.spec.tsx"
+  - "**/*.stories.tsx"
+  - "**/*.stories.mdx"
